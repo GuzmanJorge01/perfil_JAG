@@ -1,12 +1,31 @@
-h1{
+:root{
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+    --gris: #757575;
+
+    /*--tamano-fuente-ppal: 3.8rem;*/
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /* 1rem = 10px con los datos (html y body)*/
+}
+
+.titulo {
     text-align: center;
-    
+    font-size: 3.8rem;
+    font-family: 'Krub', sans-serif;
 }
 
-span{
-    font-size: small;
+
+h1.titulo span{
+    font-size: 2rem;
 }
 
-header{
-    background-color: blue;
+.titulo span{
+    font-size: 2rem;
 }
