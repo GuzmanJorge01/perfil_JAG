@@ -60,3 +60,8 @@ h1.titulo span{
     color:var(--oscuro)
 }
 
+@media (min-width: 480px) { 
+        h1{
+            
+        }
+}
