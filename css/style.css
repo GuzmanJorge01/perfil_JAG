@@ -33,8 +33,7 @@ h1.titulo span{
 }
 
 .contenedor{
-    width: 120rem;
-
+    max-width: 120rem;
     margin: 0 auto; /*top right bottom left*/
 }
 
@@ -44,10 +43,19 @@ h1.titulo span{
 
 .navegacion-principal {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) { 
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a{
+    display: block;
+    text-align: center;
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
@@ -60,8 +68,10 @@ h1.titulo span{
     color:var(--oscuro)
 }
 
-@media (min-width: 480px) { 
-        h1{
-            
-        }
+.hero {
+    background-image: url(../imagen/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
